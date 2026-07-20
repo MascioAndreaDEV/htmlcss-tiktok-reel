@@ -46,8 +46,20 @@ video {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 20px;
+	position: relative;
 	list-style: none;
 	text-decoration-line: none;
+}
+
+.icona-reel {
+	position: absolute;
+	right: 0;
+}
+
+.icona-cerca {
+	position: absolute;
+	left: 0;
 }
 
 
@@ -65,9 +77,12 @@ footer {
 }
 
 .footer-menu {
+	height: 80px;
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 	list-style: none;
+	background-color: black;
 }
 
 .footer-menu li {
