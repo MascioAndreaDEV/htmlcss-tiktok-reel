@@ -41,17 +41,19 @@ video {
 }
 
 a {
-	color: white;
+	color: rgb(163, 163, 163);
 	text-decoration: none;
 }
 
+
 a:hover {
-	color: lightgray;
+	color: white;
 	cursor: pointer;
 }
 
-i:hover {
-	color: lightgray;
+
+.header-menu a:hover {
+	color: white;
 	cursor: pointer;
 }
 
@@ -72,15 +74,17 @@ i:hover {
 	font-size: x-large;
 }
 
+.header-menu a:focus {
+	color: white;
+
+}
+
 
 
 .icona-reel {
 	position: absolute;
 	left: 15px;
 	top: 15px;
-
-
-
 }
 
 .icona-cerca {
@@ -89,9 +93,9 @@ i:hover {
 	top: 15px;
 }
 
-/* .red-dot {
+.red-dot {
 	position: relative;
-} */
+}
 
 .seguiti {
 	position: relative;
@@ -100,11 +104,37 @@ i:hover {
 
 
 .seguiti::after {
+	content: "";
 	position: absolute;
 	height: 8px;
 	width: 8px;
 	background-color: red;
 	border-radius: 50%;
+}
+
+.per-te {
+	position: relative;
+	color: white;
+}
+
+.per-te::after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	top: 24px;
+	left: 12px;
+	width: 50%;
+	background-color: white;
+}
+
+.per-te a:focus {
+	position: relative;
+	color: white;
+
+}
+
+.red-dot {
+	position: relative;
 }
 
 .dot {
@@ -150,11 +180,56 @@ footer {
 
 .footer-menu i {
 	font-size: larger;
+	color: rgb(163, 163, 163);
 }
 
 .footer-menu span {
 	font-size: x-small;
 }
+
+.bi-plus-square-fill::before {
+	content: "\f4fc";
+	font-size: x-large;
+	text-shadow: 3px 1px rgba(233, 19, 240, 0.933);
+}
+
+
+.footer-menu i:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.footer-menu button {
+	border: none;
+	background: transparent;
+	outline: none;
+	cursor: pointer;
+
+}
+
+button:focus i {
+	color: white;
+}
+
+.posta {
+	position: relative;
+}
+
+.posta::after {
+	content: "19";
+	color: white;
+	position: absolute;
+	top: -6px;
+	right: -15px;
+	height: 15px;
+	width: 16px;
+	background-color: red;
+	text-align: start;
+	border: 2px solid red;
+	border-radius: 50%;
+}
+
+
 
 /* Sidebar */
 .sidebar {
@@ -206,28 +281,3 @@ footer {
 	border-radius: 50%;
 
 }
-
-
-
-
-/* ---------------------
-Regole per evidenziare i blocchi 
-da rimuovere una volta concluso
---------------------- */
-.debug footer {
-	min-height: 100px;
-	border: 2px dashed #fff;
-}
-
-.debug .sidebar {
-	min-width: 80px;
-	min-height: 450px;
-	border: 2px dashed #ff0;
-}
-
-.debug .reel-header {
-	min-height: 50px;
-	border: 2px dashed #fff;
-}
-
-/* --------------------- */
