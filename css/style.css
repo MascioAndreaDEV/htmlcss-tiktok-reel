@@ -93,8 +93,18 @@ a:hover {
 	top: 15px;
 }
 
-.red-dot {
+.esplora {
 	position: relative;
+}
+
+.esplora:focus::after {
+	content: "";
+	position: absolute;
+	top: 24px;
+	right: 16px;
+	height: 2px;
+	width: 20px;
+	background-color: white;
 }
 
 .seguiti {
@@ -112,12 +122,26 @@ a:hover {
 	border-radius: 50%;
 }
 
+.seguiti:focus::after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	top: 24px;
+	left: 12px;
+	width: 50%;
+	background-color: white;
+
+
+
+}
+
 .per-te {
 	position: relative;
 	color: white;
 }
 
-.per-te::after {
+
+.per-te a:focus::after {
 	content: "";
 	position: absolute;
 	height: 2px;
@@ -126,6 +150,8 @@ a:hover {
 	width: 50%;
 	background-color: white;
 }
+
+
 
 .per-te a:focus {
 	position: relative;
@@ -221,11 +247,13 @@ button:focus i {
 	position: absolute;
 	top: -6px;
 	right: -15px;
-	height: 15px;
-	width: 16px;
+	height: 11px;
+	width: 13px;
 	background-color: red;
-	text-align: start;
-	border: 2px solid red;
+	font-size: 10px;
+	font-weight: 700;
+	text-align: center;
+	border: 3px solid red;
 	border-radius: 50%;
 }
 
