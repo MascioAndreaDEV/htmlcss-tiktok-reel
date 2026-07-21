@@ -304,3 +304,19 @@ button:focus i {
 .logo-plus:hover {
 	cursor: pointer;
 }
+
+/* Box Testo*/
+
+.text-box {
+	position: absolute;
+	right: 130%;
+	bottom: -29px;
+	height: 50px;
+	width: 300px;
+	color: white;
+	font-size: 13px;
+}
+
+.grassetto {
+	font-weight: 600;
+}
